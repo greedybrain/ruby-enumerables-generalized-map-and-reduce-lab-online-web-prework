@@ -11,11 +11,9 @@ end
 def reduce(source_array, start = nil)
   if start
     num1 = start
-  new = []
-  i = 0 
-  while i < source_array.length do
-    new << yield(source_array[i])
-    i += 1
+    i = 0 
+  else
+    num1 = source_array[0]
   end
   new
 end
