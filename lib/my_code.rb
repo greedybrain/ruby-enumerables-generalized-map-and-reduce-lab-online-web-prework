@@ -14,4 +14,5 @@ def reduce(source_array, *start)
   while i < source_array.length do
     new << yield(source_array[i])
   end
+  new
 end
